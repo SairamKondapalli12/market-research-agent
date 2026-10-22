@@ -1,0 +1,53 @@
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Configuration
+pydantic
+pydantic-settings
+python-dotenv
+python-json-logger
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+pgvector
+
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
+email-validator
+
+# AI & Agents
+crewai==0.60.0
+litellm==1.53.1
+langchain
+langchain-community
+langchain-google-genai
+google-generativeai
+
+# Web Search & Scraping
+tavily-python
+playwright
+beautifulsoup4
+lxml
+readability-lxml
+httpx
+
+# Background Tasks
+celery
+redis
+flower
+
+# Email
+aiosmtplib
+jinja2
+
+# Utilities
+python-dateutil
+tenacity
+tiktoken
+numpy

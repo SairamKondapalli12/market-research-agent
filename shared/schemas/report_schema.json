@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Report",
+  "type": "object",
+  "required": ["id", "title"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "request_id": { "type": "string", "format": "uuid" },
+    "title": { "type": "string" },
+    "executive_summary": { "type": ["string", "null"] },
+    "report_content": { "type": ["string", "null"] },
+    "swot_analysis": { "type": ["object", "null"] },
+    "trends": { "type": ["object", "null"] },
+    "recommendations": { "type": ["object", "null"] },
+    "confidence_score": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 }
+  }
+}

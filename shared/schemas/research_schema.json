@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ResearchRequest",
+  "type": "object",
+  "required": ["company_name"],
+  "properties": {
+    "company_name": { "type": "string", "minLength": 1, "maxLength": 255 },
+    "industry": { "type": ["string", "null"], "maxLength": 255 },
+    "known_competitors": {
+      "type": ["array", "null"],
+      "items": { "type": "string" }
+    },
+    "research_depth": {
+      "type": "string",
+      "enum": ["quick", "standard", "deep"],
+      "default": "standard"
+    }
+  }
+}
